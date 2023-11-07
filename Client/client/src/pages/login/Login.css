@@ -1,0 +1,234 @@
+.signin {
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px #dddcdc;
+    height: 100vh;
+}
+
+.signin-container{
+    display: flex;
+    background: #f6f5f7;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+}
+
+.signin-container-left {
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.signin-container-left h1 {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.signin-container-left form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-container-left form input {
+    width: 270px;
+    height: 35px;
+    padding-left: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: rgb(226, 226, 226);
+}
+
+.signin-container-left form input[type=email] {
+    margin-bottom: 20px;
+}
+
+.signin-container-left form button {
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #ff4b2b;
+    background-color: #ff4b2b;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signin-container-left form button:hover {
+    border: 2px solid #b41d02;
+    background-color: #ff2600;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signin-container-right {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    background-color: #ff416c;
+    background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    border-radius: 0px 15px 15px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-container-right h1{
+    color: #fff;
+}
+
+.signin-container-right p{
+    padding: 0px 40px 0px 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.signin-container-right button {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border: solid 2px #fff;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signin-container-right button:hover {
+    border: solid 2px rgb(172, 0, 0);
+}
+
+
+/* Extra small devices (phones, 600px) */
+@media only screen and (max-width: 600px){
+    .signin {
+        display: flex;
+        border-radius: 0px;
+        width: 100%;
+        height: 100vh; 
+        overflow: hidden;
+    }
+
+    .signin-container{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background: #f6f5f7;
+        font-family: "Montserrat", sans-serif;
+        width: 100%;
+        height: 100%;  
+    }
+
+    .signin-container-left {
+        width: 100;
+        height: 370px;
+        background-color: #fff;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .signin-container-left h1 {
+        text-align: center;
+        margin-top: 65px;
+    }
+
+    .signin-container-left form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .signin-container-left form input {
+        width: 300px;
+        height: 35px;
+        padding-left: 15px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: rgb(226, 226, 226);
+    }
+    
+    .signin-container-left form input[type=email] {
+        margin-bottom: 20px;
+    }
+    
+    .signin-container-left form button {
+        margin-top: 25px;
+        width: 150px;
+        height: 40px;
+        border: 1px solid #ff4b2b;
+        background-color: #ff4b2b;
+        border-radius: 20px;
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .signin-container-left form button:hover {
+        border: 2px solid #b41d02;
+        background-color: #ff2600;
+        border-radius: 20px;
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .signin-container-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 360px;
+        background-color: #ff416c;
+        background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+        background: linear-gradient(to right, #ff4b2b, #ff416c);
+        border-radius: 0px 0px 0px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .signin-container-right h1{
+        color: #fff;
+    }
+    
+    .signin-container-right p{
+        padding: 0px 40px 0px 40px;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .signin-container-right button {
+        margin-top: 20px;
+        width: 150px;
+        height: 40px;
+        border: solid 2px #fff;
+        background-color: transparent;
+        border-radius: 20px;
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .signin-container-right button:hover {
+        border: solid 2px rgb(172, 0, 0);
+    }
+    
+}
