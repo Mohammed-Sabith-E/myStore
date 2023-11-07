@@ -66,7 +66,7 @@ function ViewProduct() {
                                     <li key={index}>{color}</li>
                                 ))
                             ) : (
-                                <li>No product features available.</li>
+                                <li>Color information not available.</li>
                             )}
                         </ul>
                     </div>
