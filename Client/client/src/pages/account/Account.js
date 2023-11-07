@@ -52,6 +52,7 @@ function Account() {
                     </table>
                     <button onClick={handleLogout}>Logout</button>
                 </div>
+                // else no data to be displayed
                 : ''
             }
         </div >
