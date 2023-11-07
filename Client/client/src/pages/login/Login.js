@@ -7,7 +7,10 @@ import axios from 'axios'
 function Login() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const [error, setError] = useState(false);
   const navigate = useNavigate();
+
+  const form = document.querySelector("form");
 
   function handleSignInButton(e) {
     e.preventDefault()
@@ -19,7 +22,15 @@ function Login() {
         localStorage.setItem('authToken', authToken);
         navigate("/products");
       })
-      .catch(err => console.log(err))
+      .catch(err => {
+        console.log(err)
+        setError(true)
+        form.style.marginTop = "35px";
+        setTimeout(() => {
+          setError(false)
+          form.style.marginTop = "75px";
+        }, 3000);
+      })
   }
 
   function handleSignUpButton() {
@@ -32,6 +43,10 @@ function Login() {
         {/* Container Left Side */}
         <div className="signin-container-left">
           <h1>Sign in</h1>
+          {error
+            ? <p>Invalid Credentials</p>
+            : ''
+          }
           <form onSubmit={handleSignInButton}>
             <input
               type="email"

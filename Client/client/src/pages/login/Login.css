@@ -21,6 +21,13 @@
     border-radius: 15px 0px 0px 15px;
 }
 
+.signin-container-left p{
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .signin-container-left h1 {
     text-align: center;
     margin-top: 75px;

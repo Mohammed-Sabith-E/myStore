@@ -62,7 +62,7 @@ function ViewProduct() {
                         <p>Color</p>
                         <ul>
                             {productData.productColors ? (
-                                productData.productColors.map((color, index) => (
+                                productData.productColors.map((color, index) => ( 
                                     <li key={index}>{color}</li>
                                 ))
                             ) : (
